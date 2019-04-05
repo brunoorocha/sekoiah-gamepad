@@ -8,26 +8,56 @@
 
 /* Begin PBXBuildFile section */
 		A3155F3622576FF5002CACBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3155F3522576FF5002CACBF /* AppDelegate.swift */; };
-		A3155F3822576FF5002CACBF /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A3155F3722576FF5002CACBF /* GameScene.sks */; };
-		A3155F3A22576FF5002CACBF /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = A3155F3922576FF5002CACBF /* Actions.sks */; };
-		A3155F3C22576FF5002CACBF /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3155F3B22576FF5002CACBF /* GameScene.swift */; };
 		A3155F3E22576FF5002CACBF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3155F3D22576FF5002CACBF /* GameViewController.swift */; };
 		A3155F4122576FF5002CACBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3155F3F22576FF5002CACBF /* Main.storyboard */; };
-		A3155F4322576FF7002CACBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3155F4222576FF7002CACBF /* Assets.xcassets */; };
 		A3155F4622576FF7002CACBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3155F4422576FF7002CACBF /* LaunchScreen.storyboard */; };
+		A3155F59225771C2002CACBF /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3155F57225771C2002CACBF /* Character.swift */; };
+		A3155F60225771D7002CACBF /* CharacterJumpState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3155F5F225771D7002CACBF /* CharacterJumpState.swift */; };
+		A3155F61225771D7002CACBF /* CharacterMoveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3155F5E225771D7002CACBF /* CharacterMoveState.swift */; };
+		A3155F62225771D7002CACBF /* CharacterIdleState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3155F5D225771D7002CACBF /* CharacterIdleState.swift */; };
+		A3155F63225771D7002CACBF /* CharacterDieState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3155F5C225771D7002CACBF /* CharacterDieState.swift */; };
+		A3155F64225771D7002CACBF /* CharacterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3155F5B225771D7002CACBF /* CharacterState.swift */; };
+		A3155F6B22577261002CACBF /* JoystickNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3155F6622577261002CACBF /* JoystickNode.swift */; };
+		A3155F6C22577261002CACBF /* VirtualButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3155F6722577261002CACBF /* VirtualButtonNode.swift */; };
+		A3155F6D22577261002CACBF /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3155F6822577261002CACBF /* InputController.swift */; };
+		A3155F6E22577261002CACBF /* JoystickComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3155F6922577261002CACBF /* JoystickComponent.swift */; };
+		A3155F6F22577261002CACBF /* JoystickDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3155F6A22577261002CACBF /* JoystickDelegate.swift */; };
+		A3155F7722577299002CACBF /* PrepareToMatchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3155F7322577299002CACBF /* PrepareToMatchState.swift */; };
+		A3155F7822577299002CACBF /* PlayingMatchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3155F7422577299002CACBF /* PlayingMatchState.swift */; };
+		A3155F7922577299002CACBF /* MatchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3155F7522577299002CACBF /* MatchState.swift */; };
+		A3155F7A22577299002CACBF /* MatchScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3155F7622577299002CACBF /* MatchScene.swift */; };
+		A3155F7D22577899002CACBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3155F7C22577899002CACBF /* Assets.xcassets */; };
+		A3155F8022577E64002CACBF /* littleboo-idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A3155F7F22577E64002CACBF /* littleboo-idle.atlas */; };
+		A3155F8322577F60002CACBF /* AtlasTextureBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3155F8222577F60002CACBF /* AtlasTextureBuilder.swift */; };
+		A3155F96225799A5002CACBF /* littleboo-jump.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A3155F95225799A5002CACBF /* littleboo-jump.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A3155F3222576FF5002CACBF /* sekoiah-gamepad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sekoiah-gamepad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3155F3522576FF5002CACBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A3155F3722576FF5002CACBF /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		A3155F3922576FF5002CACBF /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		A3155F3B22576FF5002CACBF /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		A3155F3D22576FF5002CACBF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		A3155F4022576FF5002CACBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A3155F4222576FF7002CACBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3155F4522576FF7002CACBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3155F4722576FF7002CACBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3155F57225771C2002CACBF /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		A3155F5B225771D7002CACBF /* CharacterState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterState.swift; sourceTree = "<group>"; };
+		A3155F5C225771D7002CACBF /* CharacterDieState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDieState.swift; sourceTree = "<group>"; };
+		A3155F5D225771D7002CACBF /* CharacterIdleState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterIdleState.swift; sourceTree = "<group>"; };
+		A3155F5E225771D7002CACBF /* CharacterMoveState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterMoveState.swift; sourceTree = "<group>"; };
+		A3155F5F225771D7002CACBF /* CharacterJumpState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterJumpState.swift; sourceTree = "<group>"; };
+		A3155F6622577261002CACBF /* JoystickNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoystickNode.swift; sourceTree = "<group>"; };
+		A3155F6722577261002CACBF /* VirtualButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualButtonNode.swift; sourceTree = "<group>"; };
+		A3155F6822577261002CACBF /* InputController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
+		A3155F6922577261002CACBF /* JoystickComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoystickComponent.swift; sourceTree = "<group>"; };
+		A3155F6A22577261002CACBF /* JoystickDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoystickDelegate.swift; sourceTree = "<group>"; };
+		A3155F7322577299002CACBF /* PrepareToMatchState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrepareToMatchState.swift; sourceTree = "<group>"; };
+		A3155F7422577299002CACBF /* PlayingMatchState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingMatchState.swift; sourceTree = "<group>"; };
+		A3155F7522577299002CACBF /* MatchState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchState.swift; sourceTree = "<group>"; };
+		A3155F7622577299002CACBF /* MatchScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchScene.swift; sourceTree = "<group>"; };
+		A3155F7C22577899002CACBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3155F7F22577E64002CACBF /* littleboo-idle.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = "littleboo-idle.atlas"; sourceTree = "<group>"; };
+		A3155F8222577F60002CACBF /* AtlasTextureBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtlasTextureBuilder.swift; sourceTree = "<group>"; };
+		A3155F95225799A5002CACBF /* littleboo-jump.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = "littleboo-jump.atlas"; path = "../littleboo-jump.atlas"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +90,152 @@
 		A3155F3422576FF5002CACBF /* sekoiah-gamepad */ = {
 			isa = PBXGroup;
 			children = (
-				A3155F3522576FF5002CACBF /* AppDelegate.swift */,
-				A3155F3722576FF5002CACBF /* GameScene.sks */,
-				A3155F3922576FF5002CACBF /* Actions.sks */,
-				A3155F3B22576FF5002CACBF /* GameScene.swift */,
-				A3155F3D22576FF5002CACBF /* GameViewController.swift */,
-				A3155F3F22576FF5002CACBF /* Main.storyboard */,
-				A3155F4222576FF7002CACBF /* Assets.xcassets */,
-				A3155F4422576FF7002CACBF /* LaunchScreen.storyboard */,
+				A3155F5222577080002CACBF /* assets */,
+				A3155F5122577071002CACBF /* utils */,
+				A3155F502257706B002CACBF /* models */,
+				A3155F4F22577064002CACBF /* controllers */,
+				A3155F4E22577050002CACBF /* views */,
+				A3155F4D22577043002CACBF /* application */,
 				A3155F4722576FF7002CACBF /* Info.plist */,
 			);
 			path = "sekoiah-gamepad";
+			sourceTree = "<group>";
+		};
+		A3155F4D22577043002CACBF /* application */ = {
+			isa = PBXGroup;
+			children = (
+				A3155F3522576FF5002CACBF /* AppDelegate.swift */,
+			);
+			path = application;
+			sourceTree = "<group>";
+		};
+		A3155F4E22577050002CACBF /* views */ = {
+			isa = PBXGroup;
+			children = (
+				A3155F7B225772A1002CACBF /* storyboards */,
+				A3155F7022577299002CACBF /* scenes */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		A3155F4F22577064002CACBF /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A3155F3D22576FF5002CACBF /* GameViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		A3155F502257706B002CACBF /* models */ = {
+			isa = PBXGroup;
+			children = (
+				A3155F53225770B0002CACBF /* character */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		A3155F5122577071002CACBF /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				A3155F8122577F60002CACBF /* AtlasTextureBuilder */,
+				A3155F6522577261002CACBF /* joystick */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		A3155F5222577080002CACBF /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				A3155F7E22577E03002CACBF /* atlas */,
+				A3155F7C22577899002CACBF /* Assets.xcassets */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		A3155F53225770B0002CACBF /* character */ = {
+			isa = PBXGroup;
+			children = (
+				A3155F5A225771CA002CACBF /* states */,
+				A3155F57225771C2002CACBF /* Character.swift */,
+			);
+			path = character;
+			sourceTree = "<group>";
+		};
+		A3155F5A225771CA002CACBF /* states */ = {
+			isa = PBXGroup;
+			children = (
+				A3155F5C225771D7002CACBF /* CharacterDieState.swift */,
+				A3155F5D225771D7002CACBF /* CharacterIdleState.swift */,
+				A3155F5F225771D7002CACBF /* CharacterJumpState.swift */,
+				A3155F5E225771D7002CACBF /* CharacterMoveState.swift */,
+				A3155F5B225771D7002CACBF /* CharacterState.swift */,
+			);
+			path = states;
+			sourceTree = "<group>";
+		};
+		A3155F6522577261002CACBF /* joystick */ = {
+			isa = PBXGroup;
+			children = (
+				A3155F6622577261002CACBF /* JoystickNode.swift */,
+				A3155F6722577261002CACBF /* VirtualButtonNode.swift */,
+				A3155F6822577261002CACBF /* InputController.swift */,
+				A3155F6922577261002CACBF /* JoystickComponent.swift */,
+				A3155F6A22577261002CACBF /* JoystickDelegate.swift */,
+			);
+			path = joystick;
+			sourceTree = "<group>";
+		};
+		A3155F7022577299002CACBF /* scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A3155F7122577299002CACBF /* match-scene */,
+			);
+			path = scenes;
+			sourceTree = "<group>";
+		};
+		A3155F7122577299002CACBF /* match-scene */ = {
+			isa = PBXGroup;
+			children = (
+				A3155F7222577299002CACBF /* states */,
+				A3155F7622577299002CACBF /* MatchScene.swift */,
+			);
+			path = "match-scene";
+			sourceTree = "<group>";
+		};
+		A3155F7222577299002CACBF /* states */ = {
+			isa = PBXGroup;
+			children = (
+				A3155F7322577299002CACBF /* PrepareToMatchState.swift */,
+				A3155F7422577299002CACBF /* PlayingMatchState.swift */,
+				A3155F7522577299002CACBF /* MatchState.swift */,
+			);
+			path = states;
+			sourceTree = "<group>";
+		};
+		A3155F7B225772A1002CACBF /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A3155F4422576FF7002CACBF /* LaunchScreen.storyboard */,
+				A3155F3F22576FF5002CACBF /* Main.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		A3155F7E22577E03002CACBF /* atlas */ = {
+			isa = PBXGroup;
+			children = (
+				A3155F95225799A5002CACBF /* littleboo-jump.atlas */,
+				A3155F7F22577E64002CACBF /* littleboo-idle.atlas */,
+			);
+			path = atlas;
+			sourceTree = "<group>";
+		};
+		A3155F8122577F60002CACBF /* AtlasTextureBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				A3155F8222577F60002CACBF /* AtlasTextureBuilder.swift */,
+			);
+			path = AtlasTextureBuilder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,11 +296,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3155F96225799A5002CACBF /* littleboo-jump.atlas in Resources */,
+				A3155F8022577E64002CACBF /* littleboo-idle.atlas in Resources */,
 				A3155F4122576FF5002CACBF /* Main.storyboard in Resources */,
-				A3155F3822576FF5002CACBF /* GameScene.sks in Resources */,
-				A3155F4322576FF7002CACBF /* Assets.xcassets in Resources */,
+				A3155F7D22577899002CACBF /* Assets.xcassets in Resources */,
 				A3155F4622576FF7002CACBF /* LaunchScreen.storyboard in Resources */,
-				A3155F3A22576FF5002CACBF /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,9 +311,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3155F3C22576FF5002CACBF /* GameScene.swift in Sources */,
+				A3155F6D22577261002CACBF /* InputController.swift in Sources */,
+				A3155F61225771D7002CACBF /* CharacterMoveState.swift in Sources */,
+				A3155F7722577299002CACBF /* PrepareToMatchState.swift in Sources */,
+				A3155F62225771D7002CACBF /* CharacterIdleState.swift in Sources */,
+				A3155F7822577299002CACBF /* PlayingMatchState.swift in Sources */,
+				A3155F6C22577261002CACBF /* VirtualButtonNode.swift in Sources */,
+				A3155F64225771D7002CACBF /* CharacterState.swift in Sources */,
+				A3155F8322577F60002CACBF /* AtlasTextureBuilder.swift in Sources */,
+				A3155F63225771D7002CACBF /* CharacterDieState.swift in Sources */,
 				A3155F3E22576FF5002CACBF /* GameViewController.swift in Sources */,
 				A3155F3622576FF5002CACBF /* AppDelegate.swift in Sources */,
+				A3155F6B22577261002CACBF /* JoystickNode.swift in Sources */,
+				A3155F60225771D7002CACBF /* CharacterJumpState.swift in Sources */,
+				A3155F6E22577261002CACBF /* JoystickComponent.swift in Sources */,
+				A3155F6F22577261002CACBF /* JoystickDelegate.swift in Sources */,
+				A3155F59225771C2002CACBF /* Character.swift in Sources */,
+				A3155F7A22577299002CACBF /* MatchScene.swift in Sources */,
+				A3155F7922577299002CACBF /* MatchState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +477,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MK2CL4Y92D;
 				INFOPLIST_FILE = "sekoiah-gamepad/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,6 +496,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MK2CL4Y92D;
 				INFOPLIST_FILE = "sekoiah-gamepad/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
