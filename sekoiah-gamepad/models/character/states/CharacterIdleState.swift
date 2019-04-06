@@ -15,8 +15,8 @@ class CharacterIdleState: CharacterState {
         return true
     }
     
-    override func didEnter(from previousState: GKState?) {
-        let idleAction = SKAction.animate(with: self.stateAtlasTextures, timePerFrame: 0.1)
+    override func didEnter(from previousState: GKState?) {        
+        let idleAction = SKAction.animate(with: self.stateAtlasTextures, timePerFrame: 0.08)
         self.character.spriteNode.run(SKAction.repeatForever(idleAction))
     }
 }

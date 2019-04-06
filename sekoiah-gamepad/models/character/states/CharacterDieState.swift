@@ -15,4 +15,11 @@ class CharacterDieState: CharacterState {
         return true
     }
     
+    override func didEnter(from previousState: GKState?) {
+        let dieAction = SKAction.animate(with: self.stateAtlasTextures, timePerFrame: 0.1)
+//        let moveAction = SKAction.moveBy(x: 0, y: 32.0, duration: 0.5)
+        self.character.spriteNode.run(SKAction.group([dieAction])) {
+            self.character.removeFromParent()
+        }
+    }
 }

@@ -18,12 +18,12 @@ class CharacterJumpState: CharacterState {
     override func didEnter(from previousState: GKState?) {
         let jumpAction = SKAction.animate(with: self.stateAtlasTextures, timePerFrame: 0.05)
         self.character.spriteNode.run(jumpAction) {
-            self.stateMachine?.enter(CharacterIdleState.self)
+            self.stateMachine?.enter(CharacterFallState.self)            
         }
         
         if let physicsBody = self.character.physicsBody {
             physicsBody.velocity.dy = 0
-            physicsBody.applyForce(CGVector(dx: 0.0, dy: 800))
+            physicsBody.applyImpulse(CGVector(dx: 0.0, dy: 20))
         }
     }
 }

@@ -15,4 +15,7 @@ class CharacterMoveState: CharacterState {
         return true
     }
     
+    override func didEnter(from previousState: GKState?) {
+        
+    }
 }
