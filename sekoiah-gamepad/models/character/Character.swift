@@ -60,8 +60,7 @@ class Character: SKNode {
         self.physicsBody?.mass = 0.04
         self.physicsBody?.friction = 0.5
         self.physicsBody?.categoryBitMask = CategoryMask.character
-        self.physicsBody?.collisionBitMask = CategoryMask.platform
-        self.physicsBody?.collisionBitMask &= ~CategoryMask.character
+        self.physicsBody?.collisionBitMask = CategoryMask.platform | CategoryMask.character
         self.physicsBody?.contactTestBitMask = CategoryMask.coin
     }
     
