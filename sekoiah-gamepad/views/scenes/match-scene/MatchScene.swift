@@ -14,6 +14,7 @@ class MatchScene: SKScene {
     var stateMachine: GKStateMachine!
     var character: Character!
     var otherCharacter: Character!
+    var blockMachine: BlockMachine!
     
     var aSecondAgo: TimeInterval = 0.0
     
@@ -28,6 +29,9 @@ class MatchScene: SKScene {
         self.instanceCharacter()
         self.initGamepad()
         self.drawACoin()
+        self.initFallingBlocks()
+        
+        self.blockMachine = BlockMachine(forScene: self)
     }
     
     private func drawPlatform(atPosition position: CGPoint = CGPoint.zero) {
@@ -84,6 +88,7 @@ class MatchScene: SKScene {
         
         self.otherCharacter.update()
         self.character.update()
+        self.blockMachine.update(currentTime)
     }
     
     private func drawACoin() {
@@ -95,6 +100,12 @@ class MatchScene: SKScene {
     private func drawBackground() {
         let background = SKSpriteNode(texture: SKTexture(imageNamed: "brick-background"))
         self.addChild(background)
+    }
+    
+    private func initFallingBlocks() {
+        let block = FallingBlock()
+        block.position.y = 400
+        self.addChild(block)
     }
 }
 
@@ -109,6 +120,10 @@ extension MatchScene: SKPhysicsContactDelegate {
             else if let coin = contact.bodyB.node as! Coin? {
                 coin.collected()
             }
+        }
+        
+        if (colision == CategoryMask.character | CategoryMask.fallingBlock) {
+            
         }
     }
 }

@@ -36,6 +36,8 @@
 		A3155FA12259415A002CACBF /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3155FA02259415A002CACBF /* Coin.swift */; };
 		A3155FA422594ADA002CACBF /* CategoryMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3155FA322594ADA002CACBF /* CategoryMask.swift */; };
 		A3155FA922595625002CACBF /* littleboo-die.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A3155FA822595625002CACBF /* littleboo-die.atlas */; };
+		A3155FAC225AC2D9002CACBF /* FallingBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3155FAB225AC2D9002CACBF /* FallingBlock.swift */; };
+		A3155FAF225ACA1E002CACBF /* BlockMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3155FAE225ACA1E002CACBF /* BlockMachine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		A3155FA02259415A002CACBF /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		A3155FA322594ADA002CACBF /* CategoryMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryMask.swift; sourceTree = "<group>"; };
 		A3155FA822595625002CACBF /* littleboo-die.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = "littleboo-die.atlas"; sourceTree = "<group>"; };
+		A3155FAB225AC2D9002CACBF /* FallingBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallingBlock.swift; sourceTree = "<group>"; };
+		A3155FAE225ACA1E002CACBF /* BlockMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockMachine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,8 @@
 		A3155F502257706B002CACBF /* models */ = {
 			isa = PBXGroup;
 			children = (
+				A3155FAD225ACA02002CACBF /* block-machine */,
+				A3155FAA225AC2B5002CACBF /* falling-block */,
 				A3155FA222594AC4002CACBF /* category-masks */,
 				A3155F9F22594147002CACBF /* coin */,
 				A3155F53225770B0002CACBF /* character */,
@@ -272,6 +278,22 @@
 			path = "category-masks";
 			sourceTree = "<group>";
 		};
+		A3155FAA225AC2B5002CACBF /* falling-block */ = {
+			isa = PBXGroup;
+			children = (
+				A3155FAB225AC2D9002CACBF /* FallingBlock.swift */,
+			);
+			path = "falling-block";
+			sourceTree = "<group>";
+		};
+		A3155FAD225ACA02002CACBF /* block-machine */ = {
+			isa = PBXGroup;
+			children = (
+				A3155FAE225ACA1E002CACBF /* BlockMachine.swift */,
+			);
+			path = "block-machine";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -365,7 +387,9 @@
 				A3155F60225771D7002CACBF /* CharacterJumpState.swift in Sources */,
 				A3155F6E22577261002CACBF /* JoystickComponent.swift in Sources */,
 				A3155F6F22577261002CACBF /* JoystickDelegate.swift in Sources */,
+				A3155FAC225AC2D9002CACBF /* FallingBlock.swift in Sources */,
 				A3155F59225771C2002CACBF /* Character.swift in Sources */,
+				A3155FAF225ACA1E002CACBF /* BlockMachine.swift in Sources */,
 				A3155F7A22577299002CACBF /* MatchScene.swift in Sources */,
 				A3155FA12259415A002CACBF /* Coin.swift in Sources */,
 				A3155F7922577299002CACBF /* MatchState.swift in Sources */,
